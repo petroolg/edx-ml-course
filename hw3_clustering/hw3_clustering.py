@@ -27,7 +27,7 @@ def plotEllipse(mean, var, ax):
                   width=eigs[0] * 2, height=eigs[1] * 2,
                   angle=np.rad2deg(np.arccos(var[0, 0])),
                   facecolor='none',
-                  edgecolor='b')
+                  edgecolor='r')
     ax.add_artist(ell)
 
 
