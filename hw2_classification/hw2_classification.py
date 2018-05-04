@@ -5,7 +5,7 @@ import sys
 X_train = np.genfromtxt(sys.argv[1], delimiter=",")
 y_train = np.genfromtxt(sys.argv[2])[np.newaxis].T
 X_test = np.genfromtxt(sys.argv[1], delimiter=",")
-y_train = np.genfromtxt(sys.argv[2])[np.newaxis].T
+y_test = np.genfromtxt(sys.argv[2])[np.newaxis].T
 
 def pluginClassifier(X_train, y_train, X_test):
     class_one_hot = np.array([[y == i for i in range(4)] for y in y_train])
